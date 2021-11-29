@@ -71,19 +71,23 @@ img {
 /* css layout end */
 
 /* css styles start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .main {
   display: flex;
 }
 .sidebar {
   background: #486AE8;
-  width: 142px;
+  min-width: 142px;
   width: 10%;
-  height: 100vh;
   border-radius: 16px;
 }
 .content {
   border-radius: 0 16px 16px 0;
-  height: 100vh;
   width: 80%;
 }
 
@@ -139,6 +143,8 @@ img {
 .navbar h2 {
   font-size: 26px;
   color: #486AE8;
+  line-height: 26px;
+  vertical-align: middle;
 }
 
 .quick-search {
@@ -149,6 +155,7 @@ img {
   width: 311px;
   height: 49px;
   border-radius: 16px;
+  box-shadow: 4px 4px 25px rgba(148, 148, 148, 0.25);
 }
 
 .navbar .quick-search input::placeholder {
@@ -165,8 +172,17 @@ img {
   margin-left: 149px;
 }
 
+.nearby-stop h3 {
+  font-size: 20px;
+  line-height: 34px;
+  color: #7D7D7D;
+  margin-top: 53px;
+  margin-bottom: 34px;
+}
+
 .distance ul {
   display: flex;
+  margin-bottom: 26px;
 }
 
 .distance ul li {
@@ -177,9 +193,52 @@ img {
   display: block;
   text-align: center;
   background: #BFCDFF;
-  padding-top: 10px;
-  padding-bottom: 16px;
+  color: #FFFFFF;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.distance ul li:nth-of-type(1) a {
+  border-radius: 16px 0 0 0;
+}
+
+.distance ul li:nth-of-type(2) a {
+  border-radius: 0 16px 0 0;
+}
+
+.distance ul li .active {
+  background: #486AE8;
+}
+
+.stop-routes li {
+  padding-left: 69px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.stop-routes li:nth-of-type(odd) {
+  background: #F6F7FF;
+}
+
+.stop-routes li:nth-of-type(even) {
+  background: #ECEEFF;
+}
+
+.stop-routes li h4 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #486AE8;
+  font-weight: 700;
+}
+
+.stop-routes li p {
+  color: #7D7D7D;
+  font-weight: 500;
 }
 /* css styles end */
 
@@ -197,5 +256,11 @@ img {
 
 #myDiv {
   display: none;
+}
+
+@media (max-width: 414px) {
+  #loader {
+    background-image: url('../images/css\ loader-m.png');
+  }
 }
 /* css loader end */
