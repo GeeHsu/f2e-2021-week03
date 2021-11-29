@@ -1,0 +1,201 @@
+/* css reset start */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset end */
+
+/* css reset settings start */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+/* css reset settings end */
+
+/* outline標示寬度和高度 start */
+/* * {
+  outline: 1px solid salmon;
+} */
+/* outline標示寬度和高度 end */
+
+/* css layout start */
+
+/* css layout end */
+
+/* css styles start */
+.main {
+  display: flex;
+}
+.sidebar {
+  background: #486AE8;
+  width: 142px;
+  width: 10%;
+  height: 100vh;
+  border-radius: 16px;
+}
+.content {
+  border-radius: 0 16px 16px 0;
+  height: 100vh;
+  width: 80%;
+}
+
+.sidebar .logo {
+  display: block;
+  width: 102px;
+  height: 63px;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 39px;
+  margin-bottom: 46px;
+}
+
+.border-line {
+  width: 100%;
+  height: 1px;
+  background: #FFFFFF;
+  margin-bottom: 27px;
+}
+
+.sidebar-menu li {
+  margin-bottom: 39px;
+}
+
+.sidebar-menu li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  height: 63px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.sidebar-menu li .active {
+  background: #2A4AC2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 43px;
+  padding-left: 82px;
+  padding-right: 87px;
+}
+
+.navbar h2 {
+  font-size: 26px;
+  color: #486AE8;
+}
+
+.quick-search {
+  position: relative;
+}
+
+.navbar .quick-search input {
+  width: 311px;
+  height: 49px;
+  border-radius: 16px;
+}
+
+.navbar .quick-search input::placeholder {
+  padding-left: 94px;
+}
+
+.navbar .quick-search img {
+  position: absolute;
+  right: 14px;
+  top: 13px;
+}
+
+.nearby-stop {
+  margin-left: 149px;
+}
+
+.distance ul {
+  display: flex;
+}
+
+.distance ul li {
+  width: 50%;
+}
+
+.distance ul li a {
+  display: block;
+  text-align: center;
+  background: #BFCDFF;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  text-decoration: none;
+}
+/* css styles end */
+
+/* css loader start */
+#loader {
+  background-image: url('../images/css\ loader-pc.png');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#myDiv {
+  display: none;
+}
+/* css loader end */
