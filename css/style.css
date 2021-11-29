@@ -126,8 +126,22 @@ html, body {
   border-radius: 16px;
 }
 
+.sidebar-menu li a:hover {
+  background: #2A4AC2;
+}
+
 .sidebar-menu li .active {
   background: #2A4AC2;
+}
+
+.sidebar-menu .notify-icon {
+  position: relative;
+}
+
+.sidebar-menu .notify-dot {
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }
 
 .navbar {
